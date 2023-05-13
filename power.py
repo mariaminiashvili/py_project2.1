@@ -42,11 +42,9 @@ class Car:
 
 toyota_car = Car(brend='Toyota', model='corolla', production_year=2022, color='white', horse_power=139)   
 
-print(f"Toyota_car - brand:{toyota_car.get_brand()}")
-print(f"Toyota_car - model:{toyota_car.get_model()}")
-print(f"Toyota_car - production_year:{toyota_car.get_production_year()}")
-print(f"Toyota_car - color:{toyota_car.get_color()}")
-print(f"Toyota_car - horse_power:{toyota_car.get_horse_power()}")
-print(f"Toyota car - is_sport_car:{toyota_car.get_is_sport_car()}")
+toyota_car_increase_hp = toyota_car.increase_horse_power(65)
+print(toyota_car_increase_hp)
+print(toyota_car.get_horse_power())
 
-
+toyota_car_increase_hp = toyota_car.increase_horse_power(-40)
+print(toyota_car_increase_hp)

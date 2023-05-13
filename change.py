@@ -40,13 +40,11 @@ class Car:
         return False
     
 
-toyota_car = Car(brend='Toyota', model='corolla', production_year=2022, color='white', horse_power=139)   
+toyota_car = Car(brend='Toyota', model='corolla', production_year=2022, color='white', horse_power=139)  
 
-print(f"Toyota_car - brand:{toyota_car.get_brand()}")
-print(f"Toyota_car - model:{toyota_car.get_model()}")
-print(f"Toyota_car - production_year:{toyota_car.get_production_year()}")
-print(f"Toyota_car - color:{toyota_car.get_color()}")
-print(f"Toyota_car - horse_power:{toyota_car.get_horse_power()}")
-print(f"Toyota car - is_sport_car:{toyota_car.get_is_sport_car()}")
+toyota_car_change_color = toyota_car.change_color("red")
+print(toyota_car_change_color)
+print(toyota_car.get_color())
 
-
+toyota_car_change_color = toyota_car.change_color("red")
+print(toyota_car_change_color)
